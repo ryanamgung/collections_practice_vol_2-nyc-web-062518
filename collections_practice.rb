@@ -40,7 +40,7 @@ def count_elements(array)
     end
     element.push :", count => #{count}"
   end
-  newArr
+  array
 end
 
 
