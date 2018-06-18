@@ -73,13 +73,3 @@ def organize_schools(array)
   schools_by_city
 }
 end
-
-+  schools_by_city = {}
-+  schools.each do |school, detail|
-+    if !schools_by_city[detail[:location]]
-+          schools_by_city[detail[:location]] = [school]
-+    else
-+      schools_by_city[detail[:location]] << school
-+    end
-+  end
-+  schools_by_city
