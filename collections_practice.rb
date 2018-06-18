@@ -42,6 +42,7 @@ def count_elements(array)
   end
 end
 
+
 +  hash = {}
 +  element_tracker = []
 +  new_array = []
@@ -57,6 +58,7 @@ end
 +    end
 +  end
 +  new_array
+//
 
 def merge_data(keys, data)
 
