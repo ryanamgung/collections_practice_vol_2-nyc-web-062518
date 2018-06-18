@@ -30,8 +30,7 @@ def remove_non_strings(array)
 end
     
 def count_elements(array)
-  newArr = array.uniq
-  newArr.each do |element|
+  array.unique.each do |element|
     count = 0
     array.each do |e|
       if e == element
