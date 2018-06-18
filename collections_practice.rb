@@ -47,7 +47,7 @@ def merge_data(keys, data)
   merge = []
   keys.each do |element|
     data.first.map do |key, value|
-      if element.value[0] == key
+      if element.values[0] == key
         merge << element.merge(value)
       end
     end
