@@ -66,9 +66,9 @@ def organize_schools(array)
   array.each do |k, v|
     if ans[v[:location]].nil?
       ans[v[:location]] == []
-      ans[v[:location]] << k
+      ans[v[:location]] << [k]
     else
-      ans[v[:location]] << k
+      ans[v[:location]] << [k]
     end
   ans
 end
