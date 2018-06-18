@@ -77,15 +77,15 @@ new_hash = {}
 array = []
   schools.each do |name, hash|
   hash.each do |location_key, location|
-  if new_hash[location].nil?
-  array << name
-  new_hash[location] = array
-  array = []
-  elsif new_hash[location]
-  new_hash[location] << name
-  array = []
-  end
-  end
+    if new_hash[location].nil?
+    array << name
+    new_hash[location] = array
+    array = []
+    elsif new_hash[location]
+    new_hash[location] << name
+    array = []
+    end
+    end
   end
 new_hash
   #
