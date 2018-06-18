@@ -31,15 +31,16 @@ end
     
 def count_elements(array)
   newArr = array.uniq
-  newArr do |element|
+  newArr.each do |element|
     count = 0
     array.each do |e|
       if e == element
         count += 1
       end
     end
-    element << "#{count}"
+    element << :"count => #{count}"
   end
+  
 end
 
 
