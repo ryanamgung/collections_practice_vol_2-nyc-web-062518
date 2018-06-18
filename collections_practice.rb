@@ -66,12 +66,12 @@ def organize_schools(array)
   array = []
   schools.each do |school, element|
     element.each do |location_key, location|
-      if new_hash[location].nil?
+      if retArr[location].nil?
         array << school
-        new_hash[location] = array
+        retArr[location] = array
         array = []
-      elsif new_hash[location]
-        new_hash[location] << school
+      elsif retArr[location]
+        retArr[location] << school
         array = []
       end
     end
