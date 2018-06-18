@@ -30,14 +30,14 @@ def remove_non_strings(array)
 end
     
 def count_elements(array)
-  array.unique.each do |element|
+  array.uniq.each do |element|
     count = 0
     array.each do |e|
       if e == element
         count += 1
       end
     end
-    element.push(":, count => #{count}")
+    
   end
   array
 end
