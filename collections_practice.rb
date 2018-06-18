@@ -62,5 +62,24 @@ def find_cool(array)
 end
 
 def organize_schools(array)
-  array.each do 
+  schools = []
+  array.each do |school, element|
+    if !schools[element[:location]]
+      schools[element[:location]] == [school]
+    else
+      schools[element[:location]] << school
+    end
+  end
+  schools_by_city
+}
 end
+
++  schools_by_city = {}
++  schools.each do |school, detail|
++    if !schools_by_city[detail[:location]]
++          schools_by_city[detail[:location]] = [school]
++    else
++      schools_by_city[detail[:location]] << school
++    end
++  end
++  schools_by_city
