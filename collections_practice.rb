@@ -45,7 +45,17 @@ end
 
 def merge_data(keys, data)
   merge = []
+  keys.each do |element|
+    data.first.map do |key, value|
+      if element.values[0] == k 
+        merge << element.merge(value)
+      end
+    end
+  end
+  merge
   
+  keys.each {|i| data.first.map {|k,v| if i.values[0] == k then merged <<i.merge(v) end}}
++merged
 end
 
 def find_cool(array)
