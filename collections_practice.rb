@@ -76,5 +76,6 @@ array = []
     end
   end
 end
+new_hash
 end
 
