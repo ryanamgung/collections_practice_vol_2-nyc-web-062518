@@ -64,7 +64,7 @@ end
 def organize_schools(array)
   schools = []
   array.each do |school, element|
-    if !schools[element[:location]]
+    if schools[element[:location]]
       schools[element[:location]] = school
     else
       schools[element[:location]] << school
