@@ -70,5 +70,5 @@ def organize_schools(array)
       schools[element[:location]] << school
     end
   end
-  schools_by_city.to_i
+  schools.to_i
 end
