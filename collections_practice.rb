@@ -64,14 +64,14 @@ end
 def organize_schools(array)
   new_hash = {}
   array = []
-  schools.each do |name, hash|
-    hash.each do |location_key, location|
+  schools.each do |school, element|
+    element.each do |location_key, location|
       if new_hash[location].nil?
-        array << name
+        array << school
         new_hash[location] = array
         array = []
       elsif new_hash[location]
-        new_hash[location] << name
+        new_hash[location] << school
         array = []
       end
     end
