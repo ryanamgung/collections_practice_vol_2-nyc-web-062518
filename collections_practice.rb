@@ -62,20 +62,15 @@ def find_cool(array)
 end
 
 def organize_schools(array)
-  retArr = []
-  array = []
-  schools.each do |school, element|
-    element.each do |location_key, location|
-      if retArr[location].nil?
-        array << school
-        retArr[location] = array
-        array = []
-      elsif retArr[location]
-        retArr[location] << school
-        array = []
-      end
+  ans = {}
+  array.each do |k, v|
+    if ans[v[:location]].nil?
+      ans[v[:location]] == []
+      ans[v[:location]] << k
+    else
+      ans[v[:location]] << k
     end
-  end
-  retArr
+  ans
 end
+
 
