@@ -43,23 +43,6 @@ def count_elements(array)
 end
 
 
-+  hash = {}
-+  element_tracker = []
-+  new_array = []
-+  array.each do |element|
-+    element.each do |key, value|
-+      if element_tracker.include?(element) == false
-+        element_tracker << element
-+        hash[key] = value
-+        hash[:count] = array.count(element)
-+        new_array << hash
-+        hash = {}
-+      end
-+    end
-+  end
-+  new_array
-
-
 def merge_data(keys, data)
 
 end
