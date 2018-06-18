@@ -37,9 +37,8 @@ def count_elements(array)
         count += 1
       end
     end
-    
+    element:count = count
   end
-  array
 end
 
 
