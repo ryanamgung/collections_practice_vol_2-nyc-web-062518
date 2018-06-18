@@ -1,1 +1,65 @@
 # your code goes here
+def begins_with_r(array)
+  array.all? do |element|
+    element.start_with?("r")
+  end
+end
+
+def contain_a(array)
+  newArr = []
+  array.each do |element|
+    if element.include?("a")
+      newArr << element
+    end
+  end
+  newArr
+end
+
+def first_wa(array)
+  array.find {|element| element[0] == "w" && element[1] == "a"}
+end
+
+def remove_non_strings(array)
+  newArr = []
+  array.map do |element|
+    if element.instance_of?(String)
+      newArr << element
+    end
+  end
+  newArr
+end
+    
+def count_elements(array)
+  newArr = array.uniq
+  newArr do |element|
+    count = 0
+    array.each do |e|
+      if e == element
+        count += 1
+      end
+    end
+    element << "#{count}"
+  end
+end
+
++  e_count = array.collect do |e|
++    temp_e = e
++    temp_e[:count] = array.count(e)
++    array.delete_if{|e2| e2 == e}
++    temp_e
++  end
++  e_count
+
+def merge_data(keys, data)
+
+end
+
+def find_cool(array)
+  
+end
+
+def organize_schools(array)
+  array.sort do |a,b|
+    a <=> b
+  end
+end
