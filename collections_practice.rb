@@ -57,7 +57,7 @@ end
 
 def find_cool(array)
   array.select do |element|
-    element.any?
+    element.any? {||}
   end
 end
 
