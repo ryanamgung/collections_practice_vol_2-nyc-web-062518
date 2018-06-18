@@ -71,5 +71,4 @@ def organize_schools(array)
     end
   end
   schools_by_city
-}
 end
