@@ -62,7 +62,7 @@ def find_cool(array)
 end
 
 def organize_schools(array)
-  new_hash = {}
+  retArr = []
   array = []
   schools.each do |school, element|
     element.each do |location_key, location|
@@ -76,6 +76,6 @@ def organize_schools(array)
       end
     end
   end
-  new_hash
+  retArr
 end
 
