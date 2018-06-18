@@ -70,6 +70,7 @@ def organize_schools(array)
     else
       ans[v[:location]].push(k)
     end
+  end
   ans
 end
 
