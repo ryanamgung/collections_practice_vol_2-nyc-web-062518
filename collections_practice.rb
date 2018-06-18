@@ -42,13 +42,21 @@ def count_elements(array)
   end
 end
 
-+  e_count = array.collect do |e|
-+    temp_e = e
-+    temp_e[:count] = array.count(e)
-+    array.delete_if{|e2| e2 == e}
-+    temp_e
++  hash = {}
++  element_tracker = []
++  new_array = []
++  array.each do |element|
++    element.each do |key, value|
++      if element_tracker.include?(element) == false
++        element_tracker << element
++        hash[key] = value
++        hash[:count] = array.count(element)
++        new_array << hash
++        hash = {}
++      end
++    end
 +  end
-+  e_count
++  new_array
 
 def merge_data(keys, data)
 
