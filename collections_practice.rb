@@ -38,7 +38,7 @@ def count_elements(array)
         count += 1
       end
     end
-    element.push :", count => #{count}"
+    element.push(":, count => #{count}")
   end
   array
 end
