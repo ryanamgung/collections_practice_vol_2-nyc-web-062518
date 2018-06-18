@@ -62,20 +62,20 @@ def find_cool(array)
 end
 
 def organize_schools(array)
-new_hash = {}
-array = []
+  new_hash = {}
+  array = []
   schools.each do |name, hash|
-  hash.each do |location_key, location|
-    if new_hash[location].nil?
-      array << name
-      new_hash[location] = array
-      array = []
-    elsif new_hash[location]
-      new_hash[location] << name
-      array = []
+    hash.each do |location_key, location|
+      if new_hash[location].nil?
+        array << name
+        new_hash[location] = array
+        array = []
+      elsif new_hash[location]
+        new_hash[location] << name
+        array = []
+      end
     end
   end
-end
 new_hash
 end
 
