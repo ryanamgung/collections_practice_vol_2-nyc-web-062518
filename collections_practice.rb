@@ -37,6 +37,7 @@ def count_elements(array)
         count += 1
       end
     end
+    #the :count of the element will be set to the variable count
     element[:count] = count
   end
 end
