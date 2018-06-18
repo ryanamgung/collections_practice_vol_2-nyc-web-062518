@@ -68,7 +68,7 @@ def organize_schools(array)
       ans[v[:location]] = []
       ans[v[:location]].push(k)
     else
-      ans[v[:location]].push(k)
+      ans[v[:location]] << k
     end
   end
   ans
